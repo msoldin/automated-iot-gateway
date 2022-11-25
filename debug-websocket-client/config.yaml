@@ -1,0 +1,19 @@
+websocket:
+  host: "gateway"
+  port: 8080
+  uri: "/websockets?deviceId=websocketTestClient1"
+
+debugDevice:
+  deviceId: "websocketTestClient1"
+  maxQoS: 9
+  currentQoS: 9
+  privileged: false
+  highPriority: true
+
+debugClient:
+  legacy: false
+  lowBandwidth: false
+  roundTrip: true
+  initialDelay: 1000
+  reportInterval: 1000
+

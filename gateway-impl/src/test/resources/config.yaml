@@ -1,0 +1,62 @@
+vertx:
+  port: 8080
+
+mail:
+  port: 587
+  host: smtp-mail.outlook.com
+  authEnabled: true
+  tlsEnabled: true
+  username: marvin.soldin@outlook.de
+  password: BASE64[TWlnaHRCZUFrd2FyZDI3NzIxIQ==]
+  sendTo: marvin.soldin@outlook.de
+  sendFrom: marvin.soldin@outlook.de
+
+messaging:
+  unzipIncomingMessages: true
+  messageInterceptorEnabled: true
+
+monitoring:
+  interval: 10000
+  primaryMemoryThreshold: 0.60
+  secondaryMemoryThreshold: 0.80
+  tertiaryMemoryThreshold: 0.90
+  primaryCpuThreshold: 0.60
+  secondaryCpuThreshold: 0.70
+  tertiaryCpuThreshold: 0.80
+
+adapters:
+  - adapterId: mqtt-adapter
+    subscriber:
+      - aws-mqtt-adapter
+      - websocket-adapter
+  - adapterId: xbee-adapter
+    subscriber:
+      - aws-mqtt-adapter
+  - adapterId: websocket-adapter
+    subscriber:
+      - aws-mqtt-adapter
+      - mqtt-adapter
+  - adapterId: aws-mqtt-adapter
+    subscriber: [ ]
+
+mqtt-adapter:
+  serverUri: "tcp://192.168.0.70:1883"
+  cleanSession: true
+  automaticReconnect: true
+
+xbee-adapter:
+  port: "COM4"
+  baudRate: 9600
+
+aws-mqtt-adapter:
+  mqttConnection:
+    clientId: "DevGateway"
+    endpoint: "a2sn3h9hqsahkf-ats.iot.eu-central-1.amazonaws.com"
+    certPath: "C:\\Users\\marvi\\.gateway\\certificate.pem.crt"
+    keyPath: "C:\\Users\\marvi\\.gateway\\private.pem.key"
+    deviceShadowEnabled: true
+  registrationHandler:
+    region: "eu-central-1"
+    groupArn: "arn:aws:iot:eu-central-1:431099744266:thinggroup/DevGateway"
+    accessKeyId: "BASE64[QUtJQVdJWDRNQ0FGTzJFRUtJUEk=]"
+    secretAccessKey: "BASE64[SkNaUk9jMklocjNZdDV5OXFkUmlxQjA1YW9qalJVY29PaG5sdEJ1Qg==]"

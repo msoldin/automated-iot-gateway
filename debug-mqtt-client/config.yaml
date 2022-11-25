@@ -1,0 +1,18 @@
+mqtt:
+  serverUri: "tcp://mqtt-broker:1883"
+  clientId: "mqttTestClient1"
+  gatewayHostname: "gateway"
+
+debugDevice:
+  deviceId: "mqttTestClient1"
+  maxQoS: 9
+  currentQoS: 9
+  privileged: false
+  highPriority: false
+
+debugClient:
+  legacy: false
+  lowBandwidth: false
+  roundTrip: true
+  initialDelay: 1000
+  reportInterval: 1000

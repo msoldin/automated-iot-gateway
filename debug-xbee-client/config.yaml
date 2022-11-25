@@ -1,0 +1,18 @@
+xbee:
+  port: "COM5"
+  baudRate: 115200
+  coordinator: "Coordinator"
+
+debugDevice:
+  deviceId: "Router1"
+  maxQoS: 9
+  currentQoS: 9
+  privileged: false
+  highPriority: false
+
+debugClient:
+  legacy: false
+  roundTrip: true
+  lowBandwidth: true
+  initialDelay: 1000
+  reportInterval: 250
