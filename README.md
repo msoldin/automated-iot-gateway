@@ -1,4 +1,39 @@
-# gateway
+# Enabling IoT Connectivity and Interoperability by using Automated Gateways
+-------
+<center> Jasminka Matevska and Marvin Soldin </center>
+<center> City University of Applied Sciences, Flughafenallee 10, 28199 Bremen, Germany </center> 
+<center> jasminka.matevska@hs-bremen.de </center> 
+<center> marvin.soldin@stud.hs-bremen.de </center> 
+
+
+> As an essential part of the Industry 4.0 strategy, the In-
+> ternet of Things is developing to “Internet of Everything”. The number
+> of interconnected devices and the amount of data produced increases
+> constantly. Various devices are communicating using various protocols,
+> exchanging data using various data formats and connecting to various
+> software applications. In an IoT-Architecture, a gateway is a fundamen-
+> tal component needed for enabling device interoperability. While a great
+> deal of research has already been done on IoT in cloud computing, fog
+> computing, and edge computing, there is still no intensive activity in
+> the field of gateways in particular. Even the basic gateways can act as
+> a proxy between low-end IoT devices and data centres, automated gate-
+> ways can provide significantly higher functionality to solve the problems
+> of diversity of protocols, data formats and the custom needs of various
+> devices including used applications. This paper presents a concept of an
+> automated gateway dealing with the problems of protocol conversion,
+> device management, middleware abstraction, resource management and
+> traffic optimisation. The gateway is designed as a modular plug-and-
+> play architecture and was evaluated for MQTT, ZigBee, WebSocket and
+> Amazon WebServices. The architecture can be extended by including ad-
+> ditional modules to support further protocols and services. Finally, the
+> gateway defines its protocol and translates incoming messages into an
+> optional uniform format, which can be used by the client to enable more
+> complex message flows. Thus, it provides a solid foundation for further
+> development towards standardization of communication interfaces and
+> interoperability of IoT devices.
+
+-------
+# Project
 
 This project was bootstrapped with Maven. So be sure to install at least Maven Version 3.6.1.
 
@@ -69,7 +104,8 @@ Includes the adapter for the communication with ZigBee clients, based on XBee ha
 
 Includes an interface to communicate with the XBee hardware. This project was not created in this implementation. It was used from DIGI International Inc. However it was recompiled against a more recent serial communication library, called “nrjavaserial”, because the used “rxtx” library was not maintained anymore and only supported 32-bit architectures.
 
-## License
+-------
+# License
 
 MIT License
 
