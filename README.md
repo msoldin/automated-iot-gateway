@@ -1,10 +1,11 @@
 # Enabling IoT Connectivity and Interoperability by using Automated Gateways
 -------
-<center> Jasminka Matevska and Marvin Soldin </center>
-<center> City University of Applied Sciences, Flughafenallee 10, 28199 Bremen, Germany </center> 
-<center> jasminka.matevska@hs-bremen.de </center> 
-<center> marvin.soldin@stud.hs-bremen.de </center> 
-
+<p align="center">
+Jasminka Matevska and Marvin Soldin <br>
+City University of Applied Sciences, Flughafenallee 10, 28199 Bremen, Germany <br>
+<a href="jasminka.matevska@hs-bremen.de">jasminka.matevska@hs-bremen.de</a> <br>
+<a href="marvin.soldin@stud.hs-bremen.de">marvin.soldin@stud.hs-bremen.de</a> <br>
+</p> 
 
 > As an essential part of the Industry 4.0 strategy, the In-
 > ternet of Things is developing to “Internet of Everything”. The number
